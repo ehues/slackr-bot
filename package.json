@@ -17,7 +17,7 @@
   "author": "Tal Atlas <me@tal.by> (http://tal.by/)",
   "license": "MIT",
   "dependencies": {
-    "node-slackr": "0.0.4",
+    "node-slackr": "0.1.0",
     "lodash": "^2.4.1",
     "request": "^2.47.0",
     "ws": "^0.6.3"
