@@ -21,7 +21,7 @@ var session = new Session({
   token: token,
   devChannel: '#bottest',
   webhookClient: {
-    token: 'xxxxxxxxxxxxxxxxxxxx',
+    webhookUrl: 'xxxxxxxxxxxxxxxxxxxx',
     team: 'tumblr',
     username: 'ghbot',
     icon_url: 'http://michaelsharman.com/static/images/github_metro.png'
@@ -29,7 +29,7 @@ var session = new Session({
 });
 ```
 
-All the data in the webhook client can be used but the only required ones are token and team.
+All the data in the webhook client can be used but the only required one is webhookUrl. The webhookUrl is the value specified on Incoming Webhooks page of your Slack team. 
 
 The other option seen in this session instantiation is the dev channel. With this the bot will ignore anything in
 that channel unless `NODE_ENV=development` is set. In which case it will only listen to that channel.
